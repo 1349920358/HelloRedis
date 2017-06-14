@@ -66,7 +66,7 @@ class HelloRedis_Plugin implements Typecho_Plugin_Interface {
         $file = __TYPECHO_ROOT_DIR__ . __TYPECHO_PLUGIN_DIR__ . '/HelloRedis/install/';
         $newfile = __TYPECHO_ROOT_DIR__;
         $fu = new FileUtil();
-        return $fu->unlinkDir($newfile . '/Credis') && $fu->moveFile($newfile . '/index_origin.php', $newfile . '/index.php', true));
+        return $fu->unlinkDir($newfile . '/Credis') && $fu->moveFile($newfile . '/index_origin.php', $newfile . '/index.php', true);
     }
 
 }
